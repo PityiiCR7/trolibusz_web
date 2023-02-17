@@ -174,10 +174,10 @@
           betétjáratból áll, amit a Budapesti Közlekedési Központ megrendelésére a Budapesti Közlekedési Zrt. üzemeltet.
           A hálózat hossaz 75,5km, a vonalak száma 16, összesen 172 megállóval.</p>
         <p>Az alábbi űrlapon megnézheti a kétszámjegyű járatszámok viszonylatait:</p>
-        <form method="post">
+        <form method="post" id="jaratviszonylatok">
           <p>Járatszám:
             <br>
-            <select onclick="vegallomasKiiras(this.value)">
+            <select onchange="vegallomasKiiras(this.value)" id="jaratSzam">
               <script>
                 vegallomasNevek.forEach(jaratKiiras);
               </script>
